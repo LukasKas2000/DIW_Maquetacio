@@ -42,6 +42,7 @@
 main {
     padding-top: 70px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .header-container {
@@ -84,4 +85,10 @@ main {
 
 .reservar-btn:hover {
     background-color: #e64a19;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
