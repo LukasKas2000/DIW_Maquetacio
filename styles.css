@@ -92,3 +92,44 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Estils per a la secció "Sobre nosaltres" */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-row img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px; /* Contorns arrodonits */
+}
+
+.about-text {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.about-full-width {
+    display: flex;
+    justify-content: center;
+}
+
+.about-full-width img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px; /* Contorns arrodonits */
+}
