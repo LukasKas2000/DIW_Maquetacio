@@ -92,7 +92,6 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-
 /* Estils per a la secció "Sobre nosaltres" */
 .about-container {
     display: flex;
@@ -126,10 +125,65 @@ main {
 .about-full-width {
     display: flex;
     justify-content: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 .about-full-width img {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px; /* Aumenta el ancho máximo de la imagen */
     border-radius: 15px; /* Contorns arrodonits */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-header {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.menu-item h3 {
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    margin-bottom: 15px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
 }
