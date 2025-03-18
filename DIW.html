@@ -6,6 +6,7 @@
     <title>Restaurant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
@@ -20,6 +21,7 @@
                 <li><a href="#nosaltres">Nosaltres</a></li>
                 <li><a href="#carta">Carta</a></li>
                 <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacte">Contacte</a></li>
             </ul>
         </nav>
     </header>
@@ -28,20 +30,14 @@
         <main>
             <section id="nosaltres">
                 <h1>Sobre nosaltres</h1>
-                
                 <div class="about-container">
                     <div class="about-row">
-                        <img src="About us.jpg" alt="Personal del restaurante">
-                        <div class="about-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
+                        <img src="about-us.jpg" alt="Personal del restaurant">
+                        <p>La nostra història...</p>
                     </div>
-
                     <div class="about-row">
-                        <div class="about-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <img src="jefe.jpg" alt="El jefe del restaurante">
+                        <p>El nostre compromís...</p>
+                        <img src="jefe.jpg" alt="El xef del restaurant">
                     </div>
                 </div>
             </section>
@@ -49,41 +45,46 @@
             <section id="carta">
                 <h2>Carta</h2>
                 <div class="menu-grid">
-                    <div class="menu-header">Menú</div>
-                    
                     <div class="menu-item">
-                        <h3>Menú 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <div class="image-container">
-                            <img src="1.jpg" alt="Pasta">
-                            <span class="image-text">Pasta</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="1.jpg" alt="Entrants">
-                            <span class="image-text">Entrants</span>
-                        </div>
+                        <img src="menu1.jpg" alt="Menú 1">
+                        <span class="image-text">Menú 1</span>
                     </div>
-                    
                     <div class="menu-item">
-                        <h3>Menú 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <div class="image-container">
-                            <img src="1.jpg" alt="Amanida">
-                            <span class="image-text">Amanida</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="1.jpg" alt="Peix">
-                            <span class="image-text">Peix</span>
-                        </div>
+                        <img src="menu2.jpg" alt="Menú 2">
+                        <span class="image-text">Menú 2</span>
                     </div>
                 </div>
             </section>
+            
             <section id="galeria">
                 <h2>Galeria</h2>
-                <p>Imatges del nostre local i plats.</p>
+                <div class="gallery">
+                    <img src="galeria1.jpg" alt="Imatge 1" class="gallery-item darken">
+                    <img src="galeria2.jpg" alt="Imatge 2" class="gallery-item">
+                    <img src="galeria3.jpg" alt="Imatge 3" class="gallery-item">
+                    <img src="galeria4.jpg" alt="Imatge 4" class="gallery-item darken">
+                </div>
+            </section>
+            
+            <section id="contacte">
+                <h2>Contacte</h2>
+                <p>Omple el formulari per reservar una taula.</p>
+                <form>
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Correu electrònic" required>
+                    <button type="submit">Reservar</button>
+                </form>
             </section>
         </main>
     </div>
+    
     <button class="reservar-btn">Reservar</button>
+    
+    <footer>
+        <div class="footer-container">
+            <span class="material-icons">email</span> info@restaurant.com
+            <span class="material-icons">phone</span> 123-456-789
+        </div>
+    </footer>
 </body>
 </html>
